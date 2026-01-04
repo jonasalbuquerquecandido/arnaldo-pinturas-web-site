@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+:root {
+    --main-color:;
+    --border: #c09c50;
+    --bg: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+section {
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    border-bottom: black;
+    background-color: white;
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
