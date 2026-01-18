@@ -97,5 +97,16 @@ section {
     max-width: 100rem;
 }
 
+.content h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.content p {
+    font-size: large;
+    width: 500px;
+    text-align: justify;
+}
+
 
 
