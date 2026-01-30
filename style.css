@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 :root {
-    --main-color:;
     --border: #c09c50;
     --bg: #ffffff;
 }
@@ -76,10 +75,6 @@ section {
     gap: 1rem;
 }
 
-.btn {
-    
-}
-
 .home-container {
     background: url(images/empresa-de-pintura.png);
     background-position: center;
@@ -100,12 +95,29 @@ section {
 .content h2 {
     text-align: center;
     text-transform: uppercase;
+    width: 500px;
+    padding-bottom: 1rem;
 }
 
 .content p {
     font-size: large;
     width: 500px;
     text-align: justify;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.btn-orçamento {
+    border: 1px solid black;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    background-color: #A0D3E9;
+    text-decoration: none;
+    text-align: left;
+}
+
+.btn-orçamento:hover {
+    font-size: 1.1rem;
 }
 
 
