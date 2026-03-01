@@ -47,9 +47,6 @@ body {
     padding-top: 60px;
 }
 
-.header {
-}
-
 .nav-container {
     display: flex;
     justify-content: space-between;

@@ -1,94 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-        <link rel="shortcut icon" href="/images/favicon-eliptico.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <title>Arnaldo Pinturas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arnaldo Pinturas | Em Breve</title>
+  <meta name="description" content="Arnaldo Pinturas - Serviços profissionais de pintura residencial e comercial. Em breve nosso site completo.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      font-family: 'Segoe UI', sans-serif;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 500px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 18px;
+      opacity: 0.8;
+      margin-bottom: 30px;
+    }
+
+    .loading {
+      font-size: 20px;
+      letter-spacing: 3px;
+      margin-bottom: 30px;
+    }
+
+    .dots::after {
+      content: '';
+      animation: dots 1.5s steps(3, end) infinite;
+    }
+
+    @keyframes dots {
+      0% { content: ''; }
+      33% { content: '.'; }
+      66% { content: '..'; }
+      100% { content: '...'; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 25px;
+      border-radius: 30px;
+      background: #25d366;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      background: #1ebe5d;
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 
 <body>
-    <header class="header">
-        <nav class="nav-container">
-            <img src="images/logo-sem-fundo.png" height="100px" width="100px" alt="logo">
+  <div class="container">
+    <h1>🎨 Arnaldo Pinturas</h1>
+    <p>Nosso site está em construção</p>
+    <div class="loading">
+      Em breve<span class="dots"></span>
+    </div>
 
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#service">Serviços</a></li>
-                <li><a href="#portifolio">Portifólio</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-
-            <a href="/" class="btn-whatsapp">WhatsApp</a>
-        </nav>
-    </header>
-
-    <main>
-        <section id="home-container">
-            <div class="home">
-                <h1>Pintura Residencial e Comercial com Acabamento Profissional</h1>
-                <p>Transformamos seu ambiente com qualidade, organização e compromisso com prazos.</p>
-                <a href="" class="btn-orçamento">Solicitar Orçamento</a>
-            </div>
-        </section>
-
-        <section id="service">
-            <h2>Nossos Serviços</h2>
-            <div>
-                <h3>Pintura Residencial</h3>
-                <p>Ambientes internos e externos com acabamento impecável.</p>
-            </div>
-            <div>
-                <h3>Pintura Comercial</h3>
-                <p>Serviços rápidos e organizados para empresas.</p>
-            </div>
-            <div>
-                <h3>Pintura Fachadas</h3>
-                <p>Valorização e proteção da estrutura externa.</p>
-            </div>
-            <div>
-                <h3>Texturas e Efeitos</h3>
-                <p>Personalização moderna para o seu espaço</p>
-            </div>
-        </section>
-
-        <section id="portfolio">
-            <h2>Serviços Concluídos</h2>
-
-        </section>
-
-        <section id="about">
-            <h2>Sobre a Arnaldo Pinturas</h2>
-            <p>Somos especialistas em pintura residencial e comercial, oferecendo qualidade, organização e acabamento profissional.</p>
-        </section>
-
-        <section class="call-to-action">
-            <h2>Peça seu orçamento gratuito agora mesmo</h2>
-            <a href="">Falar no WhatsApp</a>
-        </section>
-
-        <section class="contact">
-            <h2>Contato</h2>
-            <ul>
-                <li><a href="">Instagram</a></li>
-                <li><a href="">Email</a></li>
-                <li><a href="">Endereço</a></li>
-                <li><a href="">WhatsApp: (18)99743-1712</a></li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 Arnaldo Pinturas - Todos os Direitos Reservados</p>
-        <aside>Contato
-        </aside>
-    </footer>
+    <a class="button" href="https://wa.me/5518997431712" target="_blank">
+      Solicitar Orçamento
+    </a>
+  </div>
 </body>
-
 </html>
