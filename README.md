@@ -14,6 +14,7 @@ Criar uma presença digital simples, clara e profissional para divulgação dos 
 
 - HTML5
 - CSS3
+- JavaScript
 
 ---
 
