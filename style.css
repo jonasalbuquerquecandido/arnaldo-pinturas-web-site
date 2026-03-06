@@ -58,7 +58,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    border: 0.1px solid rgba(0, 0, 0, 0.151);
     position: fixed;
     background: #ffffff;
     top: 0;
@@ -137,12 +137,12 @@ body {
 
 #service {
     background: #ffffff;
-    height: 23rem;
+    height: 26rem;
 }
 
 #service h2 {
     text-align: center;
-    padding: 2.5rem;
+    padding: 4rem 2.5rem;
     font-size: xx-large;
 }
 
@@ -156,12 +156,17 @@ body {
     text-align: center;
 
     border-radius: 0.5rem;
-    box-shadow: 6 #1a1a1a;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 1px 2px 1px #1a1a1a1f;
     padding: 1rem;
     height: 10rem;
     width: 20rem;
 }
 
+.service-card:hover {
+     transform: translateY(-12px);
+     box-shadow: var(--shadow-strong);
+}
 .service-card h3 {
     color: var(--color-primary);
     padding: 1rem;
@@ -204,10 +209,40 @@ body {
     display: flex;
     justify-content: center;
     width: 10rem;
-    color: white;
+    color: black;
     border-radius: 5px;
     padding: 0.55rem 0.8rem;
     background: var(--color-whatsapp);
+}
+
+#contact {
+    height: 15rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#contact h3 {
+    color: var(--color-text-dark);
+    padding: 1rem 0;
+    font-size: 18px;
+}
+
+#contact ul {
+    list-style: none;
+}
+
+#contact li {
+    padding-top: 0.8rem;
+}
+
+#contact a {
+    text-decoration: none ;
+    color: var(--color-primary);
+}
+
+.contact-list {
+    
 }
 
 footer {
